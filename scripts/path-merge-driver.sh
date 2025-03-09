@@ -12,7 +12,6 @@ git merge-file -p "$CURRENT" "$BASE" "$OTHER" > temp_merge
 # File paths
 sed -i '' 's|/fgmod/|/fgmod-plus/|g' temp_merge
 sed -i '' 's|"$HOME/fgmod"|"$HOME/fgmod-plus"|g' temp_merge
-sed -i '' 's|/usr/share/fgmod|/usr/share/fgmod-plus|g' temp_merge
 
 # Plugin naming
 sed -i '' 's|"name": "decky-framegen"|"name": "decky-framegen-plus"|g' temp_merge

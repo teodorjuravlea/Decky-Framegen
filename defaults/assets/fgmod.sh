@@ -13,7 +13,7 @@ error_exit() {
   exit 1
 }
 
-mod_path="/usr/share/fgmod-plus"
+mod_path="$HOME/fgmod-plus"
 
 if [ "$#" -lt 1 ]; then
     echo "Usage: $0 program [program_arguments...]"

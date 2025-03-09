@@ -62,10 +62,10 @@ cd "$mod_path" || exit 1
 rm -rf "$temp_dir"
 
 # Update paths in scripts
-sed -i 's|mod_path="/usr/share/fgmod"|mod_path="'"$mod_path"'"|g' fgmod
+sed -i 's|mod_path="$HOME/fgmod"|mod_path="'"$mod_path"'"|g' fgmod
 chmod +x fgmod
 
-sed -i 's|mod_path="/usr/share/fgmod"|mod_path="'"$mod_path"'"|g' fgmod-uninstaller.sh
+sed -i 's|mod_path="$HOME/fgmod"|mod_path="'"$mod_path"'"|g' fgmod-uninstaller.sh
 chmod +x fgmod-uninstaller.sh
 
 echo ""

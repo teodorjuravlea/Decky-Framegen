@@ -44,16 +44,16 @@ if [ ! -f optiscaler.7z ] || [ ! -s optiscaler.7z ]; then
 fi
 
 # Extract the 7z file
-echo "Extracting nvngx.dll..."
-7z e optiscaler.7z nvngx.dll
+echo "Extracting OptiScaler.dll..."
+7z e optiscaler.7z OptiScaler.dll
 
 # Rename and move the DLL to mod path
-if [ -f nvngx.dll ]; then
-    mv nvngx.dll "$mod_path/dlss-enabler-upscaler.dll"
+if [ -f OptiScaler.dll ]; then
+    mv OptiScaler.dll "$mod_path/dlss-enabler-upscaler.dll"
     chmod +x "$mod_path/dlss-enabler-upscaler.dll"
     echo "Successfully installed dlss-enabler-upscaler.dll"
 else
-    echo "Error: Failed to extract nvngx.dll"
+    echo "Error: Failed to extract OptiScaler.dll"
     exit 1
 fi
 

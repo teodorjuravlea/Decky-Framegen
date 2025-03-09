@@ -1,9 +1,7 @@
 {
   "name": "Decky-Framegen-Plus",
   "author": "JSON Derulo",
-  "flags": [
-    "root"
-  ],
+  "flags": [],
   "api_version": 1,
   "publish": {
     "tags": ["DLSS", "Framegen","upscaling","FSR"],
